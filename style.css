@@ -1,0 +1,104 @@
+body {
+    font-family: sans-serif;
+    background: #beb3ec;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.action_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 180px;
+}
+
+.card{
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+
+#action_center_left{
+    padding-right: 100px;
+   
+}
+
+#action_center_center{
+   padding-right: 60px;
+}
+
+#action_center_right{
+   
+}
+
+
+#startBtn{
+    background-color: #a1e9b3;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .screen {
+    display: none;
+    padding: 20px;
+  }
+  
+  .active {
+    display: block;
+  }
+  
+  .word {
+    display: flex;
+    gap: 10px;
+    font-size: 32px;
+    margin: 20px 0;
+  }
+  
+  .letter {
+    border-bottom: 2px solid #333;
+    width: 30px;
+    text-align: center;
+  }
+  
+  .keyboard {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    gap: 5px;
+  }
+  
+  .keyboard button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  canvas {
+    background: #fff;
+    border: 1px solid #333;
+  }
+  
+  .status {
+    font-size: 20px;
+    margin: 20px 0;
+  }
+  

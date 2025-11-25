@@ -1,0 +1,76 @@
+        <!--
+        Суть игры: игрок угадывает слово по буквам за ограниченное число попыток.
+        Ваш проект должен состоять из трех окошек
+        1) окно с полем для ввода угадываемого слова и кнопкой перехода на второе окно 
+        2)на втором окне у вас должен быть:
+            - алфавит(при нажатии на кнопку она должна блокироваться)
+            - поле, где будут отображаться правильные буквы(в правильной последовательности)
+            - визуализация "Виселицы" (стойка, перекладина, распорка,
+             верёвка, голова, туловище, две руки и две ноги)
+        3) в третьем окне
+            - статус игрока (победил или проиграл)
+            - кнопка новой игры
+        ФУНКЦИОНАЛ:
+         загаданное слово, верные/неверные быквы, открытие буквы,оставшиеся попытки(10 попыток)
+         ввод букв при нажатии на алфавит на странице
+         кнопка новой игры
+        -->
+        <!DOCTYPE html>
+        <html lang="ru">
+        <head>
+          <meta charset="UTF-8">
+          <title>Виселица</title>
+          <link rel="stylesheet" href="style.css">
+        </head>
+        <body>
+          
+          <div id="window1" class="screen active">
+            <div class="action_center">
+                <div id ="action_center_left" class = "card">
+                    <h2>Рандомное слово</h2>
+                    <button id="startBtn">Начать игру</button> 
+                </div>
+
+                <div id ="action_center_center" class = "card">
+                    <h2>Ввести слово для игры</h2>
+                    <input type="text" id="secretWord" placeholder="Секретное слово">
+                    <button id="startBtn">Начать игру</button> 
+                </div>
+
+                <div  id ="action_center_right" class = "card">
+                    <h2>Слово из категори</h2>
+                    <label for="category">Выберите категорию:</label>
+                    <select id="category" name="category">
+                        <option value="bike">Марки мотоциклов</option>
+                        <option value="cities">Города</option>
+                        <option value="animal">Животные</option>
+                        <option value="meal">Еда</option>
+                        <option value="profession">Профессии</option>
+                    </select>
+                    <button id="startBtn">Начать игру</button> 
+                </div>
+            </div>
+          </div>
+        
+
+
+
+          <div id="window2" class="screen">
+            <h2>Угадай слово</h2>
+            <canvas id="hangman" width="300" height="300"></canvas>
+            <div class="word" id="word"></div>
+            <div>Осталось попыток: <span id="attempts">10</span></div>
+            <div class="keyboard" id="keyboard"></div>
+          </div>
+        
+
+
+          <div id="window3" class="screen">
+            <h2 id="result"></h2>
+            <button id="newGame">Новая игра</button>
+          </div>
+        
+          <script src="script.js"></script>
+        </body>
+        </html>
+        
