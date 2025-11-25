@@ -26,12 +26,12 @@ body {
 }
 
 #action_center_left{
-    padding-right: 100px;
+    padding-right: 204px;
    
 }
 
 #action_center_center{
-   padding-right: 60px;
+   padding-right: 135px;
 }
 
 #action_center_right{
@@ -47,6 +47,27 @@ body {
 
 
 
+#keyboard{
+  margin-top: 10px;
+}
+
+
+#window3{
+  margin-left: 600px;
+  margin-right: 600px;
+  background-color: rgb(255, 255, 255); 
+  border-radius: 10px;
+  margin-top: 180px;
+  padding-bottom: 5px;
+}
+
+
+
+#newGame{
+  background-color: #a1e9b3;
+  padding: 8px;
+  border-radius: 10px;
+}
 
 
 
